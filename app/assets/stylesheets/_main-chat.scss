@@ -3,6 +3,7 @@
   background-color: #ffffff;
   height: 100vh;
   float: right;
+  
   &__group-info {
     height: 100px;
     padding: 0 40px;
@@ -41,6 +42,7 @@
       }
     }
   }
+  
   &__messages-list {
     background-color: #fafafa;
     height: calc(100vh - 190px);
@@ -69,6 +71,7 @@
       }
     }
   }
+  
   &__message-form {
     background-color: #d2d2d2;
     height: 90px;
