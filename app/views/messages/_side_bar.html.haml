@@ -3,18 +3,20 @@
   .side-bar__user-name
     .side-bar__user-name__box
       %p.side-bar__user-name__box__name
-        masa
+        = current_user.name
       %ul.side-bar__user-name__box__icons
         %li.side-bar__user-name__box__edit
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('fas', 'edit')
         %li.side-bar__user-name__box__new
-          = link_to "#" do
-            = icon('fas', 'cog')
+          = link_to edit_user_path(current_user.id) do
+            = icon('fas', 'cog', class: 'icon')
   
   .side-bar__group-list
-    = link_to "#", class:"group" do
-      %p.side-bar__group-list__name
-        techcamp
-      %p.side-bar__group-list__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to edit_group_path(current_user), class:"group" do
+          %p.side-bar__group-list__name
+            = group.name
+          %p.side-bar__group-list__message
+            まだメッセージがありません
