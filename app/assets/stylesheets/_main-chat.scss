@@ -46,7 +46,7 @@
   &__messages-list {
     background-color: #fafafa;
     height: calc(100vh - 190px);
-    padding: 46px 40px;
+    padding: 24px 20px;
     overflow: scroll;
     &__message {
       padding-bottom: 46px;
@@ -76,12 +76,11 @@
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    &__top {
+    .new_message{
       display: flex;
       .input-box {
-        position: relative;
         width: 100%;
-      
+        position: relative;
         &__text {
           height: 50px;
           width: 100%;
@@ -95,20 +94,23 @@
           position: absolute;
           top: 10px;
           right: 10px;
+          .icon {
+            font-size: 20px;
+          }
           &__file {
             display: none;
           }
         }
       }
-    }
-    .submit-btn {
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-left: 15px;
-      background-color: #38aef0;
-      color: white;
-      cursor: pointer;
+      .submit-btn {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+      }
     }
   }
 }
