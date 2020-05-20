@@ -11,14 +11,13 @@ $(function(){
              ${message.created_at}
            </div>
          </div>
-       </div>
-       <div class="chat-main__messages-list__message__text">
-         <p class="chat-main__messages-list__message__text__content">
-           ${message.content}
-         </p>
-       </div>
-       <img src=${message.image} >
-     </div>`
+         <div class="chat-main__messages-list__message__text">
+           <p class="chat-main__messages-list__message__text__content">
+             ${message.content}
+           </p>
+         </div>
+         <img src=${message.image} >
+       </div>`
      return html;
    } else {
      var html =
@@ -31,13 +30,12 @@ $(function(){
              ${message.created_at}
            </div>
          </div>
-       </div>
-       <div class="chat-main__messages-list__message__text">
-         <p class="chat-main__messages-list__message__text__content">
-           ${message.content}
-         </p>
-       </div>
-     </div>`
+         <div class="chat-main__messages-list__message__text">
+           <p class="chat-main__messages-list__message__text__content">
+             ${message.content}
+           </p>
+         </div>
+       </div>`
      return html;
     };
   }
